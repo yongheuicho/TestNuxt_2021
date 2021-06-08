@@ -10,20 +10,20 @@
         애견 산업 전망
       </div>
       <div class="message-body">
-        <div id="chartArea"></div>
+        test
       </div>
     </article>
   </section>
 </template>
 
 <script>
-//import myBarChart from "~/plugins/myBarChart";
-export default {
-  data() {},
-  mounted() {
-    if (process.browser) {
-      //     myBarChart("chartArea");
-    }
-  }
-};
+// //import myBarChart from "~/plugins/myBarChart";
+// export default {
+//   data() {},
+//   mounted() {
+//     if (process.browser) {
+//       //     myBarChart("chartArea");
+//     }
+//   }
+// };
 </script>
