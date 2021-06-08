@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import myBarChart from "~/plugins/myBarChart";
+//import myBarChart from "~/plugins/myBarChart";
 export default {
   mounted() {
     if (process.browser) {
-      myBarChart("chartArea");
+      //     myBarChart("chartArea");
     }
   }
 };
