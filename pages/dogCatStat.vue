@@ -20,7 +20,7 @@
 import myBarChart from "~/plugins/myBarChart";
 export default {
   mounted() {
-    if (process.client) {
+    if (process.browser) {
       myBarChart("chartArea");
     }
   }
