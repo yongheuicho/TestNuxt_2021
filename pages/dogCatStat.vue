@@ -20,17 +20,25 @@
 export default {
   mounted() {
     if (process.client) {
-      var container = document.getElementById("chartArea");
-      var data = {
-        categories: ["2012", "2014", "2016", "2018", "2018"],
+      const el = document.getElementById("chartArea");
+      const data = {
+        categories: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         series: [
           {
-            name: "시장 규모 (억원)",
-            data: [9000, 14000, 23000, 37000, 58000]
+            name: "Budget",
+            data: [5000, 3000, 5000, 7000, 6000, 4000, 1000]
+          },
+          {
+            name: "Income",
+            data: [8000, 4000, 7000, 2000, 6000, 3000, 5000]
           }
         ]
       };
-      tui.chart.barChart(container, data);
+      const options = {
+        chart: { width: 600, height: 600 }
+      };
+
+      toastui.Chart.barChart({ el, data, options });
     }
   }
 };
