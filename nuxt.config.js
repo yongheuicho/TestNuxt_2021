@@ -61,5 +61,5 @@ module.exports = {
       }
     }
   },
-  plugins: [{ src: "~/plugins/myBarChart", mode: "client" }]
+  plugins: [{ src: "~/plugins/myBarChart" }]
 };
