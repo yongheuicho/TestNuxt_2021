@@ -15,5 +15,5 @@ export default function(elementName) {
       }
     ]
   };
-  tui.chart.barChart(container, data);
+  //tui.chart.barChart(container, data);
 }
