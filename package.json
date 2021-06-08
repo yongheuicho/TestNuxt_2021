@@ -13,7 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@toast-ui/vue-chart": "^4.3.4",
+    "nuxt": "^2.0.0",
+    "vue-client-only": "^2.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
