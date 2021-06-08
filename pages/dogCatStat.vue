@@ -10,7 +10,7 @@
         애견 산업 전망
       </div>
       <div class="message-body">
-        <div class="content" id="chart"></div>
+        <div class="content"></div>
       </div>
     </article>
   </section>
