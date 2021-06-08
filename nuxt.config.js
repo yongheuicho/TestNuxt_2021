@@ -55,5 +55,6 @@ module.exports = {
         });
       }
     }
-  }
+  },
+  plugins: [{ src: "~/plugins/myLineChart", ssr: false }]
 };
