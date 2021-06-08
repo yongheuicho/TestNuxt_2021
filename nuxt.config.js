@@ -60,6 +60,6 @@ module.exports = {
         });
       }
     }
-  },
-  plugins: [{ src: "~/plugins/myBarChart", ssr: false }]
+  }
+  // plugins: [{ src: "~/plugins/myBarChart", ssr: false }]
 };
