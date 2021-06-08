@@ -10,6 +10,7 @@
         애견 산업 전망
       </div>
       <div class="message-body">
+        adfssdfsd
         <div class="content"></div>
       </div>
     </article>
