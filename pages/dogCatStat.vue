@@ -1,7 +1,6 @@
 <template>
-  <div></div>
+  <div>Test</div>
 </template>
-
 <script>
 //import myBarChart from "~/plugins/myBarChart";
 export default {
