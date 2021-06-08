@@ -10,14 +10,18 @@
         애견 산업 전망
       </div>
       <div class="message-body">
-        <div id="chartArea"></div>
+        <client-only><div id="chartArea"></div></client-only>
       </div>
     </article>
   </section>
 </template>
 
 <script>
+import ClientOnly from "vue-client-only";
 export default {
+  components: {
+    ClientOnly
+  },
   mounted() {
     if (process.client) {
       const el = document.getElementById("chartArea");
@@ -37,7 +41,6 @@ export default {
       const options = {
         chart: { width: 600, height: 600 }
       };
-
       toastui.Chart.barChart({ el, data, options });
     }
   }
