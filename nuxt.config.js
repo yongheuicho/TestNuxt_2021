@@ -60,6 +60,6 @@ module.exports = {
         });
       }
     }
-  },
-  plugins: ["~/plugins/myBarChart"]
+  }
+  //plugins: ["~/plugins/myBarChart"]
 };
