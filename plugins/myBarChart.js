@@ -1,5 +1,7 @@
 export default function(elementName) {
+  alert(elementName);
   var container = document.getElementById(elementName);
+  alert(container);
   var data = {
     categories: ["2012", "2014", "2016", "2018", "2018"],
     series: [
