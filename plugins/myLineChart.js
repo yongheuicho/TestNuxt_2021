@@ -1,5 +1,5 @@
 export default function(elementName) {
-  const chart = toastui.Chart;
+  const chart = tui.chart;
   const el = document.getElementById(elementName);
   const data = {
     categories: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -14,9 +14,6 @@ export default function(elementName) {
       }
     ]
   };
-  const options = {
-    chart: { width: 600, height: 600 }
-  };
 
-  chart.barChart({ el, data, options });
+  chart.barChart(el, data);
 }

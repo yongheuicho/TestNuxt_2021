@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         rel: "stylesheet",
-        href: "https://uicdn.toast.com/chart/latest/toastui-chart.min.css"
+        href: "https://uicdn.toast.com/tui.chart/latest/tui-chart.css"
       }
     ],
     script: [
@@ -30,8 +30,13 @@ module.exports = {
         src: "https://use.fontawesome.com/releases/v5.15.3/js/all.js"
       },
       {
-        src: "https://uicdn.toast.com/chart/latest/toastui-chart.min.js"
-      }
+        src:
+          "https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"
+      },
+      {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
+      },
+      { src: "https://uicdn.toast.com/tui.chart/latest/tui-chart.js" }
     ]
   },
   /*
