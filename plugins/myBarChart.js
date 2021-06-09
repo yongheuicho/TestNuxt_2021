@@ -1,7 +1,7 @@
 export default function(elementName) {
 	if (typeof elementName != 'string') return;
-	var container = document.getElementById(elementName);
-	var data = {
+	const el = document.getElementById(elementName);
+	const data = {
 		categories: ['2012', '2014', '2016', '2018', '2018'],
 		series: [
 			{
@@ -10,5 +10,8 @@ export default function(elementName) {
 			},
 		],
 	};
-	tui.chart.barChart(container, data);
+	const options = {
+		chart: { width: 400, height: 300 },
+	};
+	toastui.Chart.barChart({ el, data, options });
 }
