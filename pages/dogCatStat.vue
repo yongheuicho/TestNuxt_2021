@@ -21,7 +21,7 @@
 			return {};
 		},
 		mounted() {
-			if (process.browser) {
+			if (process.client) {
 				myBarChart('chartArea');
 			}
 		},
