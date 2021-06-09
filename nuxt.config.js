@@ -56,5 +56,10 @@ module.exports = {
 			}
 		},
 	},
-	plugins: [{ src: '~/plugins/myBarChart', mode: 'client' }],
+	plugins: [
+		{ src: '~/plugins/myBarChart', mode: 'client' },
+		{ src: '~/plugins/myLineChart', mode: 'client' },
+		{ src: '~/plugins/myPieChart', mode: 'client' },
+		{ src: '~/plugins/myRadarChart', mode: 'client' },
+	],
 };

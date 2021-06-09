@@ -12,17 +12,47 @@
 			</div>
 		</section>
 		<hr />
-		<div id="chartArea" style="width:100%;height:300px"></div>
+		<section class="columns">
+			<div class="column">
+				<div
+					id="barElement"
+					:style="`width:100%;height:${chartHeight}px`"
+				></div>
+				<div
+					id="pieElement"
+					:style="`width:100%;height:${chartHeight * 1.5}px`"
+				></div>
+			</div>
+			<div class="column">
+				<div
+					id="lineElement"
+					:style="`width:100%;height:${chartHeight}px`"
+				></div>
+				<div
+					id="radarElement"
+					:style="`width:100%;height:${chartHeight * 1.5}px`"
+				></div>
+			</div>
+		</section>
 	</div>
 </template>
 <script>
 	import myBarChart from '~/plugins/myBarChart';
+	import myLineChart from '~/plugins/myLineChart';
+	import myPieChart from '~/plugins/myPieChart';
+	import myRadarChart from '~/plugins/myRadarChart';
 	let first = true;
 	export default {
+		data() {
+			return { chartHeight: 300 };
+		},
 		mounted() {
 			if (first && (process.client || process.browser)) {
 				first = false;
-				myBarChart('chartArea');
+				myBarChart('barElement');
+				myLineChart('lineElement');
+				myPieChart('pieElement');
+				myRadarChart('radarElement');
 			}
 		},
 	};
