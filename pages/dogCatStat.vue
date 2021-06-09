@@ -12,6 +12,7 @@
 			</div>
 		</section>
 		<hr />
+		<div id="chartArea"></div>
 	</div>
 </template>
 <script>
@@ -19,11 +20,9 @@
 	let first = true;
 	export default {
 		mounted() {
-			if (process.client || process.browser) {
-				if (first) {
-					first = false;
-					myBarChart('chartArea');
-				}
+			if (first && (process.client || process.browser)) {
+				first = false;
+				myBarChart('chartArea');
 			}
 		},
 	};
