@@ -11,7 +11,10 @@ export default function(elementName) {
 		],
 	};
 	const options = {
-		chart: { width: 400, height: 300 },
+		chart: {
+			width: 'auto',
+			height: 'auto',
+		},
 	};
 	toastui.Chart.barChart({ el, data, options });
 }

@@ -12,7 +12,7 @@
 			</div>
 		</section>
 		<hr />
-		<div id="chartArea"></div>
+		<div id="chartArea" style="width:100%;height:300px"></div>
 	</div>
 </template>
 <script>
