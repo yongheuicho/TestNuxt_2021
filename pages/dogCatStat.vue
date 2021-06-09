@@ -18,14 +18,12 @@
 	import myBarChart from '~/plugins/myBarChart';
 	let first = true;
 	export default {
-		data() {
-			return {};
-		},
 		mounted() {
-			if (process.client && process.browser) {
-				if (first) alert('here');
-				myBarChart('chartArea');
-				first = false;
+			if (process.client || process.browser) {
+				if (first) {
+					first = false;
+					myBarChart('chartArea');
+				}
 			}
 		},
 	};

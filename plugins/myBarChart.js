@@ -1,5 +1,6 @@
 export default function(elementName) {
-	//alert(elementName);
+	if (typeof elementName != 'string') return;
+	alert(elementName);
 	// var container = document.getElementById(elementName);
 	// alert(container);
 	// if (container == null) {
