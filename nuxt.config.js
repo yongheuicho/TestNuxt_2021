@@ -1,65 +1,65 @@
 module.exports = {
-  /*
-   ** Headers of the page
-   */
-  head: {
-    title: "강냥이의 동행",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "강아지와 고양이의 동행"
-      }
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
-      },
-      {
-        rel: "stylesheet",
-        href: "https://uicdn.toast.com/tui.chart/latest/tui-chart.css"
-      }
-    ],
-    script: [
-      {
-        defer: "",
-        src: "https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-      },
-      {
-        src:
-          "https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"
-      },
-      {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
-      },
-      { src: "https://uicdn.toast.com/tui.chart/latest/tui-chart.js" }
-    ]
-  },
-  /*
-   ** Customize the progress bar color
-   */
-  loading: { color: "#3B8070" },
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** Run ESLint on save
-     */
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
-    }
-  }
-  //plugins: ["~/plugins/myBarChart"]
+	/*
+	 ** Headers of the page
+	 */
+	head: {
+		title: '강냥이의 동행',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			{
+				hid: 'description',
+				name: 'description',
+				content: '강아지와 고양이의 동행',
+			},
+		],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{
+				rel: 'stylesheet',
+				href: 'https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css',
+			},
+			{
+				rel: 'stylesheet',
+				href: 'https://uicdn.toast.com/tui.chart/latest/tui-chart.css',
+			},
+		],
+		script: [
+			{
+				defer: '',
+				src: 'https://use.fontawesome.com/releases/v5.15.3/js/all.js',
+			},
+			{
+				src:
+					'https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js',
+			},
+			{
+				src: 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js',
+			},
+			{ src: 'https://uicdn.toast.com/tui.chart/latest/tui-chart.js' },
+		],
+	},
+	/*
+	 ** Customize the progress bar color
+	 */
+	loading: { color: '#3B8070' },
+	/*
+	 ** Build configuration
+	 */
+	build: {
+		/*
+		 ** Run ESLint on save
+		 */
+		extend(config, { isDev, isClient }) {
+			if (isDev && isClient) {
+				config.module.rules.push({
+					enforce: 'pre',
+					test: /\.(js|vue)$/,
+					loader: 'eslint-loader',
+					exclude: /(node_modules)/,
+				});
+			}
+		},
+	},
+	plugins: [{ src: '~/plugins/myBarChart' }],
 };
