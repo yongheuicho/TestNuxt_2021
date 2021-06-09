@@ -16,13 +16,16 @@
 </template>
 <script>
 	import myBarChart from '~/plugins/myBarChart';
+	let first = true;
 	export default {
 		data() {
 			return {};
 		},
 		mounted() {
-			if (process.client) {
+			if (process.client && process.browser) {
+				if (first) alert('here');
 				myBarChart('chartArea');
+				first = false;
 			}
 		},
 	};
