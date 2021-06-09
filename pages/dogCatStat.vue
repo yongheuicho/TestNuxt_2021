@@ -20,10 +20,10 @@
 		data() {
 			return {};
 		},
-		//   mounted() {
-		//     if (process.browser) {
-		//       //     myBarChart("chartArea");
-		//     }
-		//   }
+		mounted() {
+			if (process.browser) {
+				myBarChart('chartArea');
+			}
+		},
 	};
 </script>
