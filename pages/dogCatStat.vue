@@ -2,7 +2,7 @@
 	<div>Test</div>
 </template>
 <script>
-	//import myBarChart from '~/plugins/myBarChart';
+	import myBarChart from '~/plugins/myBarChart';
 	export default {
 		data() {
 			return {};
