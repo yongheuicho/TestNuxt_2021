@@ -3,15 +3,15 @@
 </template>
 <script>
 	export default {
-		data() {
-			return {
-				name: null,
-			};
-		},
-		methods: {
-			submitInput() {
-				//				if (process.server) this.$router.push('/search?name=' + this.name);
-			},
-		},
+		// data() {
+		// 	return {
+		// 		name: null,
+		// 	};
+		// },
+		// methods: {
+		// 	submitInput() {
+		// 		//				if (process.server) this.$router.push('/search?name=' + this.name);
+		// 	},
+		// },
 	};
 </script>
