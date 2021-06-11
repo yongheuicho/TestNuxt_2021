@@ -1,12 +1,5 @@
 <template>
-	<div>
-		<client-only>
-			<form @submit.prevent="submitInput">
-				<input type="text" v-model="name" />
-				<button type="submit">Submit</button>
-			</form>
-		</client-only>
-	</div>
+	<div></div>
 </template>
 <script>
 	export default {
