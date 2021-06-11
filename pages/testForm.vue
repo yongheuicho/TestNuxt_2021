@@ -15,7 +15,7 @@
 		},
 		methods: {
 			submitInput() {
-				if (process.server) this.$router.push('/search?name=' + this.name);
+				//				if (process.server) this.$router.push('/search?name=' + this.name);
 			},
 		},
 	};
