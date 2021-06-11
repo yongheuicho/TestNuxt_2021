@@ -47,7 +47,9 @@
 			return { chartHeight: 300 };
 		},
 		mounted() {
-			if (first && (process.client || process.browser)) {
+			if (process.server) alert('here');
+			//	if (first && (process.client || process.browser))
+			if (first && process.client) {
 				first = false;
 				myBarChart('barElement');
 				myLineChart('lineElement');

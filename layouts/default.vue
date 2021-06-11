@@ -15,6 +15,11 @@
 						><i class="fas fa-file-signature"></i>&nbsp;강냥이 통계</nuxt-link
 					>
 				</li>
+				<li>
+					<nuxt-link to="/testForm"
+						><i class="fas fa-file-signature"></i>&nbsp;Form</nuxt-link
+					>
+				</li>
 			</ul>
 		</nav>
 		<nuxt />
