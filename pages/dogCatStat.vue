@@ -84,12 +84,12 @@ const lineData = {
 };
 export default {
   data() {
-    return { chartHeight: 300, chartLineData: lineData };
+    return { chartHeight: 300 };
   },
   mounted() {
     if (!showChart && process.client) {
       if (!myBarChart('barElement')) return;
-      if (!myLineChart('lineElement', this.chartLineData)) return;
+      if (!myLineChart('lineElement', lineData)) return;
       if (!myPieChart('pieElement')) return;
       if (!myRadarChart('radarElement')) return;
       showChart = true;
