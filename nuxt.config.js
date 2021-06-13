@@ -61,5 +61,6 @@ module.exports = {
 		{ src: '~/plugins/myLineChart', mode: 'client' },
 		{ src: '~/plugins/myPieChart', mode: 'client' },
 		{ src: '~/plugins/myRadarChart', mode: 'client' },
+		{ src: '~/plugins/firebaseDatabase' },
 	],
 };
