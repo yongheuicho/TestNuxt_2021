@@ -19,10 +19,10 @@ export default {
     };
   },
   mounted() {
-    //fbDb.ref('data').set({'child1': {'child2_1': 'My world!', 'child2_2': 'Your world!'}});
+    fbDb.ref('data').set({'child1': {'child2_1': 'My world!', 'child2_2': 'Your world!'}});
     //alert(fbDb.ref('data').child('child1'));
     //fbDb.ref('names').child('child1').update({'child2': 'Our world!'});
-    fbDb.ref('data').remove();
+    //fbDb.ref('data').remove();
     // fbDb
     //   .ref('names').child('child1')
     //   .on('value', (snapshot) => {
